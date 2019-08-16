@@ -1,8 +1,9 @@
 # utl-linking-values-based-on-common-names
 Linking values based on common names
-    Linking values based on common names                                                                                                       
-    Another Solution by KSharpe (diferent output slightly differeent assumptions?)
-    https://communities.sas.com/t5/user/viewprofilepage/user-id/18408   
+
+     Linking values based on common names                                                                                                       
+      Another Solution by KSharpe (diferent output slightly differeent assumptions?)
+      https://communities.sas.com/t5/user/viewprofilepage/user-id/18408   
                                                                     
     PROC SORT                                                           
       DATA=WORK.have                                                
