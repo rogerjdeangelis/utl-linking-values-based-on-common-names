@@ -1,6 +1,21 @@
 # utl-linking-values-based-on-common-names
 Linking values based on common names
     Linking values based on common names                                                                                                       
+    Another Solution by KSharpe (diferent output slightly differeent assumptions?)
+    https://communities.sas.com/t5/user/viewprofilepage/user-id/18408   
+                                                                    
+    PROC SORT                                                           
+      DATA=WORK.have                                                
+      OUT=WORK.SORTTempTableSorted                                  
+      ;                                                             
+      BY NAME FILE1       Status;                                   
+    RUN;                                                                
+    PROC TRANSPOSE DATA=WORK.SORTTempTableSorted                        
+      OUT=TRNSTRANSPOSED                                            
+      PREFIX=VALUE;                                                 
+      BY NAME FILE1       Status;                                   
+      VAR VALUE;                                                    
+    RUN;                
                                                                                                                                                
     github                                                                                                                                     
     https://tinyurl.com/y4z82uz9                                                                                                               
